@@ -1,0 +1,31 @@
+import pygame
+import os
+import time
+import random
+
+class Run(object):
+    def __init__(self):
+        
+        self.WIDTH, self.HEIGHT = 750, 750 
+        self.WIN = pygame.display.set_mode((self.WIDTH, self.HEIGHT))
+        
+        # LOAD img
+        self.RED_SPACE_SHIP = pygame.image.load(os.path.join("./assets/pixel_ship_red_small.png"))
+        self.GREEN_SPACE_SHIP = pygame.image.load(os.path.join("./assets/pixel_ship_green_small.png"))
+        self.BLUE_SPACE_SHIP = pygame.image.load(os.path.join("./assets/pixel_ship_blue_small.png"))
+        self.RED_SPACE_SHIP = pygame.image.load(os.path.join("./assets/pixel_ship_red_small.png"))
+
+        # Main player
+        self.MAIN_PLAYER = pygame.image.load(os.path.join("./assets/pixel_ship_yellow.png"))
+
+        # lasers
+        self.RED_LASER = pygame.image.load(os.path.join("./assets/pixel_laser_red.png"))
+        self.GREEN_LASER = pygame.image.load(os.path.join("./assets/pixel_laser_green.png"))
+        self.BLUE_LASER = pygame.image.load(os.path.join("./assets/pixel_laser_blue.png"))
+        self.YELLOW_LASER = pygame.image.load(os.path.join("./assets/pixel_laser_yellow.png"))
+
+        # BackGround
+        self.BG = pygame.image.load(os.path.join("./assets/background-black.png"))
+
+if __name__ == "__main__":
+    Run()

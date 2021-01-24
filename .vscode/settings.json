@@ -1,0 +1,11 @@
+{
+    "git.ignoreLimitWarning": true,
+    "python.pydev.java.home": "/usr/bin/java",
+    "python.pydev.preferredImportLocation": "global",
+    "python.condaPath": "/home/joeljebitto/anaconda3/envs/Joel-Jebitto-Dev/bin/python",
+    "python.pythonPath": "/home/joeljebitto/anaconda3/envs/Joel-Jebitto-Dev/bin/python",
+    "python.pydev.pythonExecutable": "/home/joeljebitto/anaconda3/envs/Joel-Jebitto-Dev/bin/python",
+    "python.pydev.pythonPath": [
+        "/home/joeljebitto/anaconda3/envs/Joel-Jebitto-Dev/bin/python"
+    ]
+}
