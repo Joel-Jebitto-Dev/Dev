@@ -1,0 +1,4 @@
+.vscode
+.history
+.gitignore  
+Python/django/DjangoWebSite/DjangoWebSite/settings.py/SECRET_KEY
