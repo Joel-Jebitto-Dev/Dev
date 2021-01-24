@@ -3,3 +3,7 @@
 2021-01-24 12:13:12.544 IST [45167] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
 2021-01-24 12:13:12.558 IST [45168] LOG:  database system was shut down at 2021-01-24 12:12:58 IST
 2021-01-24 12:13:12.564 IST [45167] LOG:  database system is ready to accept connections
+2021-01-24 12:28:18.245 IST [45167] LOG:  received smart shutdown request
+2021-01-24 12:28:18.249 IST [45167] LOG:  background worker "logical replication launcher" (PID 45174) exited with exit code 1
+2021-01-24 12:28:18.250 IST [45169] LOG:  shutting down
+2021-01-24 12:28:18.262 IST [45167] LOG:  database system is shut down

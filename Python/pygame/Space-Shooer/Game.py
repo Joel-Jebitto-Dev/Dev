@@ -14,7 +14,6 @@ class Run(object):
         self.RED_SPACE_SHIP = pygame.image.load(os.path.join("./assets/pixel_ship_red_small.png"))
         self.GREEN_SPACE_SHIP = pygame.image.load(os.path.join("./assets/pixel_ship_green_small.png"))
         self.BLUE_SPACE_SHIP = pygame.image.load(os.path.join("./assets/pixel_ship_blue_small.png"))
-        self.RED_SPACE_SHIP = pygame.image.load(os.path.join("./assets/pixel_ship_red_small.png"))
 
         # Main player
         self.MAIN_PLAYER = pygame.image.load(os.path.join("./assets/pixel_ship_yellow.png"))
@@ -26,7 +25,7 @@ class Run(object):
         self.YELLOW_LASER = pygame.image.load(os.path.join("./assets/pixel_laser_yellow.png"))
 
         # BackGround
-        self.BG = pygame.image.load(os.path.join("./assets/background-black.png"))
+        self.BG = pygame.transform.scale(pygame.image.load(os.path.join("./assets/background-black.png")), (self.HEIGHT, self.WIDTH))
 
         self.Main()
 
@@ -36,10 +35,13 @@ class Run(object):
         clock = pygame.time.Clock()    
         
         def redraw(self):
+            self.WIN.blit(self.BG, (0, 0))
             pygame.display.update()
         
         while run:
             clock.tick(FPS)
+            
+            redraw(self)
             
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
