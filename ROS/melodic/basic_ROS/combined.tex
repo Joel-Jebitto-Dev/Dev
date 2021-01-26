@@ -1,0 +1,117 @@
+% Many a time we have HTML articles published across multiple pages.
+% And sometimes we want to print all those pages as one PDF.
+% Here is how to do it:
+% - Print into PDF from the browser into files like p01.pdf, p02.pdf etc
+% - Use LaTeX to assemble these into one PDF.
+%
+% Here is the example. The \includepdf command supports scaling too,
+% and I'm sure some other interesting commands as well.
+%
+% [copylifted from: http://yusung.blogspot.com/2007/02/combine-several-pdf-files-using-latex.html]
+% thanks!
+%
+\documentclass[a4paper]{article}
+% \usepackage{makeidx}
+% \makeindex
+\usepackage[T1]{fontenc}
+\usepackage{palatino}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{pdfpages}
+\usepackage{fancyhdr}
+\usepackage{geometry}
+\geometry{verbose,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in}
+% \setlength\footskip{1cm}
+\usepackage{tocloft}
+\pagestyle{fancy}
+%\fancyhead{} % clear all header fields
+%\fancyhead[LE,RO]{((( nb.metadata["latex_metadata"]["chapter"] )))}
+%\fancyheadoffset[LE,RO]{1cm}
+\renewcommand{\headrulewidth}{0pt} % no line in header area
+\renewcommand{\footrulewidth}{0pt} % no line in header area
+\fancyfoot{} % clear all footer fields
+\fancyfoot[LE,RO]{ ROS BASICS IN 5 DAYS | \thepage}           % page number in "outer" position of footer line
+\fancyfootoffset[LE,RO]{1cm}
+\begin{document}
+% \tableofcontents
+
+\newpage
+\clearpage\phantomsection
+\includepdf[pages=-, pagecommand={\pagestyle{fancy}}, scale=1]{Book_Prologue.pdf}
+
+\newpage
+\clearpage\phantomsection
+\includepdf[pages=-, pagecommand={\pagestyle{fancy}}, scale=1]{Book_Preface.pdf}
+
+\newpage
+\clearpage\phantomsection
+\includepdf[pages=-, pagecommand={\pagestyle{fancy}}, scale=1]{Rosjects.pdf}
+
+\newpage
+\clearpage\phantomsection
+
+% \addcontentsline{toc}{chapter}{Chapter 0. Introduction to the Course}
+\includepdf[pages=-, pagecommand={\pagestyle{fancy}}, scale=1]{unit0_Intro.pdf}
+
+\newpage
+\clearpage\phantomsection
+
+% \addcontentsline{toc}{chapter}{Chapter 1. Basic Concepts}
+\includepdf[pages=-, pagecommand={\pagestyle{fancy}}, scale=1]{unit1_basicROS.pdf}
+\newpage
+\clearpage\phantomsection
+
+\includepdf[pages=-, pagecommand={\pagestyle{fancy}}, scale=1]{unit2_topics_part1.pdf}
+\newpage
+\clearpage\phantomsection
+
+\includepdf[pages=-, pagecommand={\pagestyle{fancy}}, scale=1]{unit2_topics_part2.pdf}
+\newpage
+\clearpage\phantomsection
+
+\includepdf[pages=-, pagecommand={\pagestyle{fancy}}, scale=1]{unit3_basicROS_Part1_v2.pdf}
+\newpage
+\clearpage\phantomsection
+
+\includepdf[pages=-, pagecommand={\pagestyle{fancy}}, scale=1]{unit3_basicROS_Part2_v2.pdf}
+\newpage
+\clearpage\phantomsection
+
+\includepdf[pages=-, pagecommand={\pagestyle{fancy}}, scale=1]{python_classes.pdf}
+\newpage
+\clearpage\phantomsection
+
+\includepdf[pages=-, pagecommand={\pagestyle{fancy}}, scale=1]{unit4_basicROS_Part1.pdf}
+\newpage
+\clearpage\phantomsection
+
+\includepdf[pages=-, pagecommand={\pagestyle{fancy}}, scale=1]{unit4_basicROS_Part2.pdf}
+\newpage
+\clearpage\phantomsection
+
+\includepdf[pages=-, pagecommand={\pagestyle{fancy}}, scale=1]{unit5_basicROS.pdf}
+\newpage
+\clearpage\phantomsection
+
+\includepdf[pages=-, pagecommand={\pagestyle{fancy}}, scale=1]{Course_Project.pdf}
+\newpage
+\clearpage\phantomsection
+
+\includepdf[pages=-, pagecommand={\pagestyle{fancy}}, scale=1]{Turtlebot_Project.pdf}
+\newpage
+\clearpage\phantomsection
+
+\includepdf[pages=-, pagecommand={\pagestyle{fancy}}, scale=1]{Appendix1.pdf}
+\newpage
+\clearpage\phantomsection
+
+\includepdf[pages=-, pagecommand={\pagestyle{fancy}}, scale=1]{Appendix2.pdf}
+\newpage
+\clearpage\phantomsection
+
+\includepdf[pages=-, pagecommand={\pagestyle{fancy}}, scale=1]{FinalRecommendations.pdf}
+\newpage
+\clearpage\phantomsection
+% \includepdf[pages=-, pagecommand={\pagestyle{fancy}}, scale=1]{Unit1.pdf}
+% \includepdf[pages=-, pagecommand={\pagestyle{fancy}}, scale=1]{Unit1.pdf}
+% \printindex
+\end{document}

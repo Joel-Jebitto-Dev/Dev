@@ -1,0 +1,8 @@
+prefix=/home/joeljebitto/Dev/ROS/melodic/W1-TurtleBot3/devel
+
+Name: open_manipulator_controller
+Description: Description of open_manipulator_controller
+Version: 2.0.1
+Cflags: -I/home/joeljebitto/Dev/ROS/melodic/W1-TurtleBot3/src/open_manipulator/open_manipulator_controller/include -I/usr/include
+Libs: -L${prefix}/lib 
+Requires: roscpp std_msgs sensor_msgs geometry_msgs moveit_msgs trajectory_msgs open_manipulator_msgs robotis_manipulator open_manipulator_libs moveit_core moveit_ros_planning moveit_ros_planning_interface cmake_modules

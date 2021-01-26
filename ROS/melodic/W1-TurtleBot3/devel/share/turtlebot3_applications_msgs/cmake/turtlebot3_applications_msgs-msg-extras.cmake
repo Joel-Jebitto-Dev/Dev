@@ -1,0 +1,2 @@
+set(turtlebot3_applications_msgs_MESSAGE_FILES "/home/joeljebitto/Dev/ROS/melodic/W1-TurtleBot3/src/turtlebot3_applications_msgs/msg/PanoramaImg.msg")
+set(turtlebot3_applications_msgs_SERVICE_FILES "/home/joeljebitto/Dev/ROS/melodic/W1-TurtleBot3/src/turtlebot3_applications_msgs/srv/TakePanorama.srv;/home/joeljebitto/Dev/ROS/melodic/W1-TurtleBot3/src/turtlebot3_applications_msgs/srv/SetFollowState.srv")

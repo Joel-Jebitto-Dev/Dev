@@ -1,0 +1,7 @@
+set(open_manipulator_with_tb3_tools_SETUP_PY_SETUP_MODULE "distutils.core")
+set(open_manipulator_with_tb3_tools_SETUP_PY_VERSION "1.1.0")
+set(open_manipulator_with_tb3_tools_SETUP_PY_SCRIPTS "")
+set(open_manipulator_with_tb3_tools_SETUP_PY_PACKAGES "open_manipulator_with_tb3_tools")
+set(open_manipulator_with_tb3_tools_SETUP_PY_PACKAGE_DIRS "src/open_manipulator_with_tb3_tools")
+set(open_manipulator_with_tb3_tools_SETUP_PY_MODULES "")
+set(open_manipulator_with_tb3_tools_SETUP_PY_MODULE_DIRS "")

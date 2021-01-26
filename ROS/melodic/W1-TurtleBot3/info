@@ -1,0 +1,23 @@
+export TURTLEBOT3_MODEL=burger
+export TURTLEBOT3_MODEL=waffle_pi
+waffle
+
+roslaunch turtlebot3_gazebo turtlebot3_empty_world.launch
+
+roslaunch turtlebot3_gazebo turtlebot3_house.launch
+
+roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
+
+
+export TURTLEBOT3_MODEL=waffle_pi
+
+rosdep install --from-paths src --ignore-src -r -y
+
+roslaunch open_manipulator_with_tb3_gazebo empty_world.launch
+
+
+
+
+
+
+

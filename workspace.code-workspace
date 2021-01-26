@@ -8,6 +8,9 @@
 		},
 		{
 			"path": "."
+		},
+		{
+			"path": "ROS/melodic/W1-TurtleBot3"
 		}
 	],
 	"settings": {
