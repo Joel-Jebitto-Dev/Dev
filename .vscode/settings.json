@@ -7,5 +7,14 @@
     "python.pydev.pythonExecutable": "/home/joeljebitto/anaconda3/envs/Joel-Jebitto-Dev/bin/python",
     "python.pydev.pythonPath": [
         "/home/joeljebitto/anaconda3/envs/Joel-Jebitto-Dev/bin/python"
-    ]
+    ],
+    "cmake.configureOnOpen": true,
+    "cmake.sourceDirectory": "${workspaceFolder}/.",
+    "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+    "python.testing.pytestArgs": [
+        "Python"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.nosetestsEnabled": false,
+    "python.testing.pytestEnabled": true
 }
